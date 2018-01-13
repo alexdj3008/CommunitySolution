@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-navbar primary>
+      <ion-buttons left>
+          <button ion-button icon-only menuToggle="left">
+            <ion-icon name="menu"></ion-icon>
+          </button>
+        </ion-buttons>
+        <img ion-right src="assets/imgs/logo.png" class="navbarLogo" />
+    <ion-title>Configuración</ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="cancel()">
+        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+      </button>
+    </ion-buttons>
+  <ion-buttons end>
+      <button ion-button (click)="done()" strong>
+        <ion-icon name="md-checkmark" showWhen="core,android,windows"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-avatar item-start (click)="updateProfileImage()">
+        <img src="assets/imgs/avatar/marty-avatar.png">
+      </ion-avatar>
+      <p class="username">{{user.name}}</p>
+      <p>Owner</p>
+    </ion-list-header>
+  </ion-list>
+
+  <ion-list no-border>
+    <form *ngIf="form" [formGroup]="form" (ngSubmit)="createItem()">
+    <input type="file" #fileInput style="visibility: hidden; height: 0px" name="files[]" (change)="processWebImage($event)" />
+    <div class="profile-image-wrapper" (click)="getPicture()">
+      <div class="profile-image-placeholder" *ngIf="!this.form.controls.profilePic.value">
+        <ion-icon name="add"></ion-icon>
+        <div>
+          Añadir imagen
+        </div>
+      </div>
+      <div class="profile-image" [style.backgroundImage]="getProfileImageStyle()" *ngIf="this.form.controls.profilePic.value"></div>
+    </div>
+    <ion-list>
+      <ion-item>
+        <ion-input type="text" placeholder="Nombres" formControlName="nombre"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="text" placeholder="Apellidos" formControlName="apellidos"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="email" placeholder="Correo" formControlName="correo"></ion-input>
+      </ion-item>
+          <ion-item>
+        <ion-input type="text" placeholder="Fecha de Nacimiento" formControlName="fecha"></ion-input>
+      </ion-item>      
+    <ion-item>
+    <ion-label>Sexo</ion-label>
+    <ion-select interface="popover">
+      <ion-option value="f">Femenino</ion-option>
+      <ion-option value="m">Masculino</ion-option>
+    </ion-select>
+  </ion-item>
+        <ion-item>
+        <ion-input type="text" placeholder="Teléfono" formControlName="telefono"></ion-input>
+      </ion-item>
+            <ion-item>
+        <ion-input type="text" placeholder="UserName" formControlName="username"></ion-input>
+      </ion-item>
+            <ion-item>
+        <ion-input type="password" placeholder="Contraseña" formControlName="password"></ion-input>
+      </ion-item>
+
+    </ion-list>
+  </form>
+  </ion-list>
+
+
+  <ion-list>
+    <ion-item>
+  <ion-buttons end>
+      <button ion-button icon-only (click)="logOut()">
+        <ion-icon name="exit"></ion-icon>
+      </button>
+    </ion-buttons>
+    </ion-item>
+  </ion-list>
+</ion-content>

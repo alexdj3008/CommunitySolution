@@ -1,0 +1,79 @@
+[
+  {
+    "id": 0,
+    "category": "Infraestructura",
+    "title": "Reparemos la cerca de la cancha",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    "imgpath": "assets/imgs/1.jpg"
+  },
+  {
+    "id": 1,
+    "category": "Infraestructura",
+    "title": "Pintar el salón comunal",
+    "description": "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "imgpath": "assets/imgs/1.jpg"
+  },
+  {
+    "id": 2,
+    "category": "Seguridad",
+    "title": "Camaras de seguridad en casa de mujeres hermosas",
+    "description": "Es solo por seguridad, no me juzguen",
+    "imgpath": "assets/imgs/1.jpg"
+  },
+  {
+    "id": 3,
+    "category": "CulturayDeporte",
+    "title": "Campeonato de futbolito",
+    "description": "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+    "imgpath": "assets/imgs/1.jpg"
+  },
+  {
+    "id": 4,
+    "category": "CulturayDeporte",
+    "title": "Obra de teatro con los niños",
+    "description": "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+    "imgpath": "assets/imgs/3.jpg"
+  },
+  {
+    "id": 5,
+    "category": "Salud",
+    "title": "Campaña de nutrición",
+    "description": "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+    "imgpath": "assets/imgs/3.jpg"
+  },
+  {
+    "id": 6,
+    "category": "Otros",
+    "title": "This Title",
+    "description": "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+    "imgpath": "assets/img/backgrounds/img1.png"
+  },
+  {
+    "id": 7,
+    "category": "Otros",
+    "title": "Why Title",
+    "description": "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+    "imgpath": "assets/img/backgrounds/img2.png"
+  },
+  {
+    "id": 8,
+    "category": "Almost at The End",
+    "title": "Thy Title",
+    "description": "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+    "imgpath": "assets/img/backgrounds/img3.png"
+  },
+  {
+    "id": 9,
+    "category": "The Final One",
+    "title": "A Longer Title",
+    "description": "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+    "imgpath": "assets/img/backgrounds/img1.png"
+  },
+  {
+    "id": 10,
+    "category": "One More",
+    "title": "The Longest Title in History",
+    "description": "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+    "imgpath": "assets/img/backgrounds/img2.png"
+  }
+]

@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar>
+      <ion-buttons left>
+          <button ion-button icon-only menuToggle="left">
+            <ion-icon name="menu"></ion-icon>
+          </button>
+      </ion-buttons>
+        <img ion-right src="assets/imgs/logo.png" class="navbarLogo" />
+      <ion-title>Agregar</ion-title>
+      <ion-buttons start>
+        <button ion-button (click)="onCancelar()">
+          <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-buttons end>
+        <button ion-button (click)="onGuardar()">
+        <ion-icon name="md-checkmark" showWhen="core,android,windows"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+<ion-card *ngIf="proyecto">
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label floating>Nombre</ion-label>
+          <ion-input [(ngModel)]="proyecto.nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Categoria</ion-label>
+          <ion-input type="text" [(ngModel)]="proyecto.categoria"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Descripción</ion-label>
+          <ion-input type="text" [(ngModel)]="proyecto.descripcion"></ion-input>
+        </ion-item>
+		<ion-item>
+          <ion-label floating>Lugar</ion-label>
+          <ion-input type="text" [(ngModel)]="proyecto.lugar"></ion-input>
+        </ion-item>
+        </ion-list>
+    	</ion-card-content>
+</ion-card>
+</ion-content>

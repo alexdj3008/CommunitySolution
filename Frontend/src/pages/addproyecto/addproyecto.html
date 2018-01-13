@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar>
+      <ion-buttons left>
+          <button ion-button icon-only menuToggle="left">
+            <ion-icon name="menu"></ion-icon>
+          </button>
+      </ion-buttons>
+        <img ion-right src="assets/imgs/logo.png" class="navbarLogo" />
+      <ion-title>Agregar</ion-title>
+      <ion-buttons start>
+        <button ion-button (click)="cancel()">
+          <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-buttons end>
+        <button ion-button (click)="saveProyecto()">
+        <ion-icon name="md-checkmark" showWhen="core,android,windows"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <!-- <form [formGroup]="form" (ngSubmit)="guardarProyecto">
+    <! <input type="file" #fileInput style="visibility: hidden; height: 0px" name="files[]" (change)="processWebImage($event)" /> 
+
+
+    <div class="profile-image-wrapper" (click)="getPicture()">
+      <div class="profile-image-placeholder" *ngIf="!this.form.controls.profilePic.value">
+        <ion-icon name="add"></ion-icon>
+        <div>
+          Añadir imagen
+        </div>
+      </div>
+      <div class="profile-image" [style.backgroundImage]="getProfileImageStyle()" *ngIf="this.form.controls.profilePic.value"></div>
+    </div>
+    -->
+
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Categorias</ion-label>
+       <ion-select [(ngModel)]="regData.categoria" interface="popover">
+         <ion-option value="Infraestructura">Infraestructura</ion-option>
+         <ion-option value="Seguridad">Seguridad</ion-option>
+         <ion-option value="CulturayDeporte">Cultura y Deporte</ion-option>
+         <ion-option value="Salud">Salud</ion-option>
+         <ion-option value="Otros">Otros</ion-option>
+       </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Nombre</ion-label>
+        <ion-input type="text" [(ngModel)]="regData.nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Descripción</ion-label>
+        <ion-input type="text" [(ngModel)]="regData.descripcion"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Lugar</ion-label>
+        <ion-input type="text" placeholder="Lugar" [(ngModel)]="regData.lugar"></ion-input>
+    </ion-item>
+  </ion-list>
+  <!-- </form>-->
+</ion-content>

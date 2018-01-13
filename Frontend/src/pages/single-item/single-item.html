@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <img ion-right src="assets/imgs/logo.png" class="navbarLogo" />
+    <ion-title>Detalles</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card>
+    <!--<img src="{{ item.imgpath }}">-->
+
+    <ion-list>
+
+        <div>Nombre: {{ item.nombre }}</div>
+        <div>Categoria: {{ item.categoria }}</div>
+          <div>Descripción: {{item.descripcion}}</div>
+          <div>Lugar: {{item.lugar}}</div>
+
+      </ion-list>
+
+      <!--<button ion-button color="purple" clear small icon-left (click)="like(post)">
+          <ion-icon name='thumbs-up'></ion-icon>
+          4 Likes
+      </button>
+      <button ion-button no-padding color="purple" clear small icon-right (click)="comment(post)">
+          <ion-icon name='text'></ion-icon>
+          6 Comments
+      </button>-->
+  </ion-card>        
+</ion-content>

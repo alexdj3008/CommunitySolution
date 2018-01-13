@@ -1,0 +1,36 @@
+ <ion-header>
+
+  <ion-navbar>
+    <ion-title>Iniciar Sesión</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="transparent-header" [ngStyle]="{'background-image': 'url(' + backgroundImage +')'}">
+  <form (submit)="doLogin()">
+  <div padding>
+    <ion-row>
+      <ion-col>
+        <img class="logo" src="assets/imgs/logo.png" />
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-list inset class="no-border">
+          <ion-item>
+        <ion-input [(ngModel)]="loginData.username" type="text"placeholder="Usuario" name="username"></ion-input>
+          </ion-item>
+          <ion-item>
+        <ion-input [(ngModel)]="loginData.password" type="password" placeholder="Contraseña" name="password"></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button class="login-button" type="submit">Iniciar Sesión</button>
+      </ion-col>
+    </ion-row>
+  </div>
+  </form>
+</ion-content>

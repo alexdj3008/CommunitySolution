@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle="left">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <img ion-right src="assets/imgs/logo.png" class="navbarLogo" />
+    <ion-title>Categorías</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="logout()">
+        <ion-icon name="exit"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!-- Beginning of the category card -->
+  <div class="padding_helper" color="white" (click)="CategoryTapped()">
+    <div class="category__image">
+        <div class="text-center image__padding">
+          <p class="section__headline">
+              Inversión en obras civiles
+          </p>
+          <p class="nomargin category__headline">
+              Infraestructura
+          </p>
+        </div>
+    </div>
+  </div>
+  <!-- End of the category card -->
+
+  <!-- Beginning of the category card -->
+  <div class="padding_helper" color="white" (click)="CategoryTapped_2()">
+    <div class="category__image2">
+        <div class="text-center image__padding">
+          <p class="section__headline">
+              Mejora de calidad de vida
+          </p>
+          <p class="nomargin category__headline">
+              Salud
+          </p>
+        </div>
+    </div>
+  </div>
+  <!-- End of the category card -->
+
+  <!-- Beginning of the category card -->
+  <div class="padding_helper" color="white" (click)="CategoryTapped_3()">
+    <div class="category__image3">
+        <div class="text-center image__padding">
+          <p class="section__headline">
+              Siempre preparados
+          </p>
+          <p class="nomargin category__headline">
+              Seguridad
+          </p>
+        </div>
+    </div>
+  </div>
+  <!-- End of the category card -->
+
+   <!-- Beginning of the category card -->
+  <div class="padding_helper" color="white" (click)="CategoryTapped_4()">
+    <div class="category__image4">
+        <div class="text-center image__padding">
+          <p class="section__headline">
+              Participa y aprende
+          </p>
+          <p class="nomargin category__headline">
+              Cultura y deporte
+          </p>
+        </div>
+    </div>
+  </div>
+  <!-- End of the category card -->
+
+  <!-- Beginning of the category card -->
+  <div class="padding_helper" color="white" (click)="CategoryTapped_5()">
+    <div class="category__image5">
+        <div class="text-center image__padding">
+          <p class="section__headline">
+              Plantea tus ideas
+          </p>
+          <p class="nomargin category__headline">
+              Otros Proyectos
+          </p>
+        </div>
+    </div>
+  </div>
+</ion-content>

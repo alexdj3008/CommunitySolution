@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+      <ion-buttons left>
+          <button ion-button icon-only menuToggle="left">
+            <ion-icon name="menu"></ion-icon>
+          </button>
+        </ion-buttons>
+        
+    <img ion-right src="assets/imgs/logo.png" class="navbarLogo" />
+    <ion-title>Proyectos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- Toolbar to wrap search bar
+  <ion-toolbar>
+    <ion-searchbar
+      placeholder="Search"
+      (ionInput)="getItems($event)">
+    </ion-searchbar>
+  
+  </ion-toolbar>
+ End of Toolbar Code -->
+
+  <!-- List Code -->
+  <ion-list>
+
+    <button ion-item *ngFor="let item of lista" (click)="itemTapped($event, item)">
+
+        <h2>{{ item.nombre }}</h2>
+        <p>{{ item.descripcion }}</p>
+
+        <!--<button ion-button clear item-right (click)="onClick(item)">Ver</button>-->
+    </button>
+  </ion-list>
+  <!-- End of List Code -->
+
+
+
+
+</ion-content>

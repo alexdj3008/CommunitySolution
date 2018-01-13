@@ -1,0 +1,34 @@
+ <ion-header>
+  <ion-navbar>
+    <ion-title>Registrar</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="transparent-header" [ngStyle]="{'background-image': 'url(' + backgroundImage +')'}">
+
+  <div padding>
+    <ion-row>
+      <ion-col>
+        <ion-list inset class="no-border">
+          <ion-item>
+            <ion-input [(ngModel)]="regData.email" type="email" placeholder="ejemplo@tucorreo.com" name="email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input [(ngModel)]="regData.username" type="text" placeholder="Usuario" name="usuario"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input [(ngModel)]="regData.password1" type="password" placeholder="Contraseña" name="password"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input [(ngModel)]="regData.password2" name="password2" type="password" placeholder="Repetir Contraseña"></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button class="login-button" (click)="registrar()">Registrar</button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
