@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { Http } from '@angular/http';
 import { Proyecto } from '../../providers/servicios/proyecto';
-import { ServiciosProvider } from '../../providers/servicios/servicios';
-import { EditarPage } from '../editar/editar';
+
 
 @Component({
   selector: 'page-single-item',
@@ -17,8 +15,7 @@ export class SingleItem {
 
   constructor(
               public navCtrl: NavController,
-              private navParams:NavParams,
-              private servicios : ServiciosProvider
+              private navParams:NavParams
               )
             { 
               this.item = this.navParams.data;

@@ -1,8 +1,8 @@
 import { ToastService } from '../../providers/util/toast.service';
 import { AlertService } from '../../providers/util/alert.service';
 import { Component, ViewChild  } from '@angular/core';
-import { IonicPage, NavParams, ViewController  } from 'ionic-angular';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { IonicPage, ViewController  } from 'ionic-angular';
+import { FormGroup } from '@angular/forms';
 import { Camera } from '@ionic-native/camera';
 
 @IonicPage()
@@ -35,19 +35,8 @@ export class ProfileSettingsPage {
     public alertService: AlertService,
     public toastCtrl: ToastService,
     public viewCtrl: ViewController,
-    formBuilder: FormBuilder,
     public camera: Camera) {
-    this.form = formBuilder.group({
-      profilePic: [''],
-      nombre: [''],
-      apellidos: ['', Validators.required],
-      correo: [''],
-      fecha: [''],
-      sexo: [''],
-      telefono: [''],
-      username: [''],
-      password: ['']
-    });
+    
 
     // Watch the form for changes, and
     this.form.valueChanges.subscribe((v) => {

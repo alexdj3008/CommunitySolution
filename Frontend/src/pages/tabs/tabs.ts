@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavParams } from 'ionic-angular';
-import { ContactPage } from '../contact/contact';
 import { HomePage } from '../home/home';
 import { ListPage } from '../list/list';
 import { ProfilePage } from '../profile/profile';

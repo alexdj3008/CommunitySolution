@@ -1,10 +1,6 @@
 import { Component } from '@angular/core';
-import {IonicPage, ModalController, NavController, NavParams, LoadingController } from 'ionic-angular';
-import { Http } from '@angular/http';
+import { ModalController, NavController, NavParams } from 'ionic-angular';
 import { ServiciosProvider } from './../../providers/servicios/servicios';
-import { Observable } from 'rxjs/Observable';
-import { Proyecto } from '../../providers/servicios/proyecto';
-
 import { SingleItem } from '../single-item/single-item';
 
 // Importar el proveedor de los proyectos

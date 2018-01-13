@@ -1,12 +1,12 @@
-import { Component, ViewChild } from '@angular/core';
-import { IonicPage, AlertController, NavParams, ViewController } from 'ionic-angular';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Component } from '@angular/core';
+import { IonicPage, ViewController } from 'ionic-angular';
+import { FormGroup } from '@angular/forms';
 import { Camera } from '@ionic-native/camera';
 
 import { Proyecto } from '../../providers/servicios/proyecto';
 import { ServiciosProvider } from '../../providers/servicios/servicios';
 import { NavController } from 'ionic-angular/navigation/nav-controller';
-import { ListPage } from '../list/list';
+
 import { TabsPage } from '../tabs/tabs';
 
 @IonicPage()
@@ -37,9 +37,7 @@ export class AddproyectoPage {
 
   constructor(
     public viewCtrl: ViewController,
-    private formBuilder: FormBuilder,
     private service: ServiciosProvider,
-    private alertCotrl: AlertController,
     public camera: Camera,
     public navCtrl:NavController) {
     

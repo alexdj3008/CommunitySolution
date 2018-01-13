@@ -7,7 +7,7 @@ import { WelcomePage } from '../pages/welcome/welcome';
 import { TabsPage } from '../pages/tabs/tabs';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
-import { ProfilePage } from '../pages/profile/profile';
+
 import { ProfileSettingsPage} from '../pages/profile-settings/profile-settings';
 import { ChatPage} from '../pages/chat/chat';
 //import { MessagesPage} from '../pages/chat/messages/messages';
